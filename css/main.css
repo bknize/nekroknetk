@@ -1,21 +1,47 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 #splashContainer{
     width: 100%;
-    height: 600px;
-    border: 1px solid #F00;
+    height: 300px;
+    opacity: .1;
+    //border: 1px solid #F00;
     box-sizing: border-box;
+    overflow: hidden;
+    background-image: url('../img/tv-static.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
 }
 #splash{
-    
+   display: inline;
 }
+div, section{
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.headerBookend{
+    width: 100%;
+    background-color: #000;
+    height: 40px;
+}
+section{
+    margin: 60px auto 60px auto;
+    min-height: 300px;
+}
+h1{
+    position: absolute;
+}
+h2{
+    //transform: rotate(90deg);
+    border: 1px solid #000;
 
-
-
-
-
+}
 
 
 
