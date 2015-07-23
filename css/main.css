@@ -1,17 +1,191 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* styles */
+body{
+    font-family: "Times New Roman", serif;
+}
+section{
+    padding: 8px;
+    min-height: 600px;
+    margin-top: 60px;
+    z-index: 3;
+    border-right: 1px dashed #000;
+    position: relative;
+}
+section.headliner{
+    margin-top: 0;
+    padding-top: 0;
+}
+div.headliner{
+    min-height: 80px;
+    background-color: #000;
+    font-weight: 900;
+    position: relative;
+    top: -2px;
+}
+.textcenter{
+    text-align: center;
+}
+.image.headline{
+    height: 300px;
+    border-bottom: 16px solid #000;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    top: -2px;
+}
+.image.headline img{
+    vertical-align: middle;
+}
+.imageScreen{
+    width: 100%;
+    height: 100%;
+    opacity: .15;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+}
+h1{
+    margin: 0;
+    position: relative;
+    bottom: 180px;
+    font-weight: 900;
+    text-align: right;
+    width: 100%;
+}
+h2, h4{
+    color: #fff;
+    text-align: right;
+}
+h3{
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+}
+
+h5{
+    width: 100%;
+    text-align: center;
+}
+a{
+    color: #00f;
+    text-decoration: underline;
+}
+a:hover{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+}
+.image{
+    height: 150px;
+    background-color: #DDD;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+.content{
+    padding: 0;
+    border-left: 1px dashed #ccc;
+    background-color: #fff;
+}
+.content p{
+    text-indent: 48px;
+    line-height: 2.4em;
+}
+.content p:first-child{
+    margin-top: 24px;
+    text-indent: 0;
+}
+.content p:first-child:first-line{
+    font-family: 'Biryani', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+.articles .row.image{
+    border: 1px solid #ccc;
+    border-top: 8px solid #000;
+    border-bottom: 8px solid #000;
+}
+.articles p{
+    padding: 0 8px 0 8px;
+}
+.archive,
+.sort{
+    text-align: center;
+    padding-top: 40px;
+}
+#archiveToggleButton,
+button.sort{
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+    }
+button.sort{
+    width: 40px;
+    height: 40px;
+    }
+.articles .readMore{
+    float: right;
+    margin-right: 16px;
+    font-size: 1.4em;
+}
+.articles .row .archive{
+    border-top: 2px dashed #ccc;
+}
+/* utilities */
 html, body{
     margin: 0;
     padding: 0;
     height: 100%;
 }
+.wrapper{
+    position: absolute;
+    overflow-x: hidden;
+    min-height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.sideWrapper{
+    float: right;
+    border-top: 1px dashed #000;
+    transform: rotate(90deg);
+    position: relative;
+    left: 300px;
+    top: 260px;
+    width: 500px;
+    z-index: 2;
+}
+.mutilate{
+    color:#eee;
+    font-family:"Times New Roman", serif;
+    font-weight: normal;
+    z-index:-5;
+    text-transform: none;
+}
+div.mutilate{
+    position: relative;
+    overflow: visible;
+    height: 1px;
+    right: 400px;
+    font-size: .8em;
+    line-height: 2em;
+}
+/* header */
 #splashContainer{
     padding-top: 40px;
     width: 100%;
     height: 300px;
     opacity: .1;
-    //border: 1px solid #F00;
     box-sizing: border-box;
     overflow: hidden;
     background-image: url('../img/tv-static.gif');
@@ -30,68 +204,10 @@ html, body{
 }
 .headerBookend.nav{
     position: fixed;
-    z-index: 5;
+    z-index: 10;
 }
-div, section{/*
-    border: 1px solid #000;
-    box-sizing: border-box;*/
-}
-section{
-    padding: 8px;
-    background-color: #ccc;
-    min-height: 600px;
-    margin-top: 60px;
-    z-index: 1;
-}
-.content p{
-    padding: 0 16px 0 16px;
-}
-h1, h2, h3, h4{
-    font-family: 'Biryani', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #000;
-}
-h1{
-    margin: 0;
-    position: relative;
-    bottom: 180px;
-    font-weight: 900;
-    text-align: right;
-    width: 100%;
-}
-h2{
-    font-size: 50px;
-    font-weight: 900;
-    position: absolute;
-}
-h4{
-    width: 100%;
-    text-align: center;
-}
-.sideWrapper{
-    float: right;
-    border-top: 1px solid #000;
-    transform: rotate(90deg);
-    position: relative;
-    left: 260px;
-    top: 260px;
-    width: 500px;
-    z-index: 2;
-}
-.image{
-    height: 150px;
-    background-color: #DDD;
-    border: 1px solid #000;
-}
-.image.headline{
-    height: 300px;
-}
-footer{
-    width: 100%;
-    height: 200px;
-    background-color: #000;
-}
+
+/* navigation */
 button.nav{
     float: right;
     border: 0;
@@ -100,7 +216,11 @@ button.nav{
     height: 80px;
     margin: 0;
     padding: 0;
-    z-index: 10;
+    color: #fff;
+}
+button.nav.mobileFix{
+    height: 40px;
+    width: 40px;
 }
 #mobileScreen{
     width: 100vw;
@@ -109,8 +229,8 @@ button.nav{
     background: url('../img/tv-static.gif') center repeat-x;
     background-size: auto 100%;
     position: fixed;
-    z-index: 5;
     display: none;
+    z-index: 8;
 }
 #mobileMenu{
     width: 350px;
@@ -118,7 +238,62 @@ button.nav{
     background-color: #000;
     position: fixed;
     right: 0;
-    z-index: 5;
     display: none;
+    z-index: 9;
 }
-
+#mobileFray{
+    width: 40px;
+    float: left;
+    background-image: url('../img/menuFray.gif');
+    background-repeat: repeat-y;
+    background-position: top;
+    height: 100%;
+    position: relative;
+    right: 40px;
+}
+.headliner ul{
+    border: 2px dashed #ccc;
+    border-left: 0;
+    border-bottom: 0;
+    background-color: #fff;
+    
+}
+nav ul li{
+    text-align: right;
+    font-size: 1.5em;
+    list-style: none;
+    text-transform: lowercase;
+}
+#headlinerNav.mobileFix ul li,
+#archiveList ul li{
+    list-style: none;
+    float: right;
+    margin: auto 6px auto 6px;
+}
+#archiveList,
+.sort{
+    margin-top: 40px;
+}
+#archiveList{
+    border-top: 2px dashed #ccc;
+}
+#headlinerNav.mobileFix ul li:after,
+#archiveList ul li:after{
+    content:", "
+}
+#mainNav{
+    border-left: 1px dashed #000;
+    width: 100%;
+    margin-top: 80px;
+    height: 100%;
+    padding: 24px 6px 6px 6px;
+}
+#mainNav ul li a{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Biryani', sans-serif;
+    text-decoration: none;
+}
+#mainNav ul li a:hover{
+    color: #222;
+}

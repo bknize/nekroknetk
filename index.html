@@ -30,7 +30,11 @@
         <![endif]-->
 <div id="mobileScreen"></div>
 <div id="mobileMenu">
-	<nav>
+  <div id="mobileFray"></div>
+	<button class="nav">
+		<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+	</button>
+	<nav id="mainNav">
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
@@ -59,26 +63,34 @@
 	<h1 id="title">NEKROKINE.TK</h1>
   </div>
   <div class="headerBookend"></div>
-</div>
+
   <div class="container">
-	<div class="sideWrapper">
-	    <h2>The Good Shit</h2>
+	<div class="sideWrapper ">
+	    <h3>The Good Shit</h3>
 	</div>
     <section class="headliner row">
-        <div class="content col-xs-11">
+        <div class="col-xs-11">
           <div class="row">
-            <div class="col-xs-8">
-              <div class="row image headline"></div>
-              <div class="row">
+            <div class="headliner col-xs-12 col-sm-9">
+              <h2>The Story of Diagonal</h2>
+              <h4>Dagonal's creator tells us about the character's origin and appearances in his work</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-9">
+              <div class="row image headline" style='background-image: url("img/hh.jpg");'>
+                <img class="imageScreen" src="img/image-screen.gif">
+              </div>
+              <div class="content col-md-10 col-md-offset-1 col-xs-12">
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 			  </div>
             </div>
-            <div class="col-xs-4">
-				<h4>Menu Title</h4>
-				<nav>
+            <div class="col-xs-12 col-sm-3">
+				<h5>Old Articles</h5>
+				<nav id="headlinerNav">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
@@ -99,46 +111,89 @@
         </div>
     </section>
     
-	<div class="sideWrapper">
-		<h2>Leftovers</h2>
+	<div class="sideWrapper ">
+		<h3>Leftovers</h3>
 	</div>
     <section class="articles row">
-        <div class="content col-xs-11">
+        <div class="col-xs-11">
           <div class="row">
-            <div class="col-xs-3">
-              <div class="row image"></div>
+            <div class="col-xs-6 col-sm-3">
+              <a href="#"><div class="row image"></div></a>
               <div class="row">
-				<h4>Sub Article</h4>
+				<h5>Sub Article</h5>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-			  </div>
+                <a class="readMore" href="#">Read More</a>
+              </div>
             </div>
-            <div class="col-xs-3">
-              <div class="row image"></div>
+            <div class="col-xs-6 col-sm-3">
+              <a href="#"><div class="row image"></div></a>
               <div class="row">
-				<h4>Sub Article</h4>
+				<h5>Sub Article</h5>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-			  </div>
+                <a class="readMore" href="#">Read More</a>
+              </div>
             </div>
-            <div class="col-xs-3">
-              <div class="row image"></div>
+
+            <div class="col-xs-6 col-sm-3">
+              <a href="#"><div class="row image"></div></a>
               <div class="row">
-				<h4>Sub Article</h4>
+				<h5>Sub Article</h5>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-			  </div>
+                <a class="readMore" href="#">Read More</a>
+              </div>
             </div>
-            <div class="col-xs-3">
-              <div class="row image"></div>
-              <div class="row">
-				<h4>Sub Article</h4>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-			  </div>
+
+
+            <div class="textcenter col-xs-6 col-sm-3">
+              <button id="archiveToggleButton"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></button>
+              <h5>archive</h5>
             </div>
           </div>
         </div>
+        <div id="archiveContainer" class="row">
+          <div id="archiveList" class="col-xs-12 col-sm-8">
+            <h5>Archive</h5>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+          </div>
+            <div class="sort col-xs-2 col-xs-offset-2 col-sm-offset-0 col-sm-1">
+              <button class="sort date"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></button>
+              <h5>Date</h5>
+            </div>
+            <div class="sort col-xs-2 col-sm-1">
+              <button class="sort author"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></button>
+              <h5>Author</h5>
+            </div>
+            <div class="sort col-xs-2 col-sm-1">
+              <button class="sort title"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></button>
+              <h5>Title</h5>
+            </div>
+        </div>
     </section>
     
-	<div class="sideWrapper">
-		<h2>Netdredge</h2>
+	<div class="sideWrapper ">
+		<h3>Netdredge</h3>
 	</div>
     <section class="feeds row">
       <div class="content col-xs-11">
@@ -151,10 +206,11 @@
       <footer>
         <p>&copy; Company 2015</p>
       </footer>
-    </div> <!-- /container         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>-->
+</div>
+ <!-- /container         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/glitch-canvas.min.js"></script>
 	<script src="js/vendor/glitch-text-scripts.js"></script>
     
@@ -173,6 +229,7 @@
         -->
     <script src="js/vendor/bootstrap-toolkit.min.js"></script>
 	<script src="js/vendor/jquery.fittext.js"></script>
+    <script src="js/vendor/jquery-imagefill.js"></script>
 	<script src="js/main.js"></script>
     </body>
 </html>
