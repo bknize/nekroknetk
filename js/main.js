@@ -5,9 +5,11 @@ function respondCanvas(){
     c.attr('width', $(container).width() ); //max width
     c.attr('height', $(container).height() ); //max height
 
-        console.log("resize from respond")
-        getImage();
+    console.log("resize from respond")
 
+    getImage();
+    jQuery("h1").fitText();
+    mutilateHeaders()
 }
 
 function draw(url){
@@ -46,8 +48,29 @@ function getImage(){
     });
 };
 
-$(document).ready( function(){
+function mutilateHeaders(){
+    $(".mutilate").remove();
+    $("h2").each(function(index){
+       var x = $(this).clone()
+       x.addClass("mutilate")
+       x.attr('style','color:#DDD;font-family:"Times New Roman", serif;font-weight: normal;z-index:-5;')
+       x.attr('id','mutilate-'+index)
+       $(this).before(x)
+    });
+    $(".mutilate").each(function(index){
+        for (var i=0; i < 5; i++){
+            glitchAll('mutilate-'+index,'mutilate-'+index,false,false)
+        }
+        
+    })
+}
 
+$(document).ready( function(){
+    $("button.nav").click(function(){
+        $("#mobileScreen").fadeToggle()
+        $("#mobileMenu").fadeToggle()
+        $("button.nav span").toggle()
+    })
 });
 
 (function($, document, window, viewport){

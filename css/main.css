@@ -7,6 +7,7 @@ html, body{
     height: 100%;
 }
 #splashContainer{
+    padding-top: 40px;
     width: 100%;
     height: 300px;
     opacity: .1;
@@ -21,33 +22,103 @@ html, body{
 #splash{
    display: inline;
 }
-div, section{
-    border: 1px solid #000;
-    box-sizing: border-box;
-}
 .headerBookend{
     width: 100%;
     background-color: #000;
     height: 40px;
+    color: #FFF;
+}
+.headerBookend.nav{
+    position: fixed;
+    z-index: 5;
+}
+div, section{/*
+    border: 1px solid #000;
+    box-sizing: border-box;*/
 }
 section{
-    margin: 60px auto 60px auto;
-    min-height: 300px;
+    padding: 8px;
+    background-color: #ccc;
+    min-height: 600px;
+    margin-top: 60px;
+    z-index: 1;
+}
+.content p{
+    padding: 0 16px 0 16px;
+}
+h1, h2, h3, h4{
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
 }
 h1{
-    position: absolute;
+    margin: 0;
+    position: relative;
+    bottom: 180px;
+    font-weight: 900;
+    text-align: right;
+    width: 100%;
 }
 h2{
-    //transform: rotate(90deg);
-    border: 1px solid #000;
-
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
 }
-
-
-
-
-
-
-
-
+h4{
+    width: 100%;
+    text-align: center;
+}
+.sideWrapper{
+    float: right;
+    border-top: 1px solid #000;
+    transform: rotate(90deg);
+    position: relative;
+    left: 260px;
+    top: 260px;
+    width: 500px;
+    z-index: 2;
+}
+.image{
+    height: 150px;
+    background-color: #DDD;
+    border: 1px solid #000;
+}
+.image.headline{
+    height: 300px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+button.nav{
+    float: right;
+    border: 0;
+    background-color: #000;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+#mobileScreen{
+    width: 100vw;
+    height: 100vh;
+    opacity: .3;
+    background: url('../img/tv-static.gif') center repeat-x;
+    background-size: auto 100%;
+    position: fixed;
+    z-index: 5;
+    display: none;
+}
+#mobileMenu{
+    width: 350px;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    display: none;
+}
 
