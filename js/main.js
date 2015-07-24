@@ -147,6 +147,15 @@ $(document).ready( function(){
     $("#archiveToggleButton").click(function(){
         $("#archiveContainer").toggle()
     })
+    
+        $('.twitter').twittie({
+            dateFormat: '%b. %d, %Y',
+            template: '{{tweet}} <div class="date">{{date}}</div> <a href="{{url}}" target="_blank">Details</a>',
+            count: 1,
+            hideReplies: true
+        });
+    
+    
 });
 
 (function($, document, window, viewport){

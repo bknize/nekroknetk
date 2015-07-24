@@ -4,6 +4,8 @@
 /* styles */
 body{
     font-family: "Times New Roman", serif;
+font-smooth: never;
+-webkit-font-smoothing : none;
 }
 section{
     padding: 8px;
@@ -22,7 +24,7 @@ div.headliner{
     background-color: #000;
     font-weight: 900;
     position: relative;
-    top: -2px;
+    top: -8px;
 }
 .textcenter{
     text-align: center;
@@ -33,7 +35,7 @@ div.headliner{
     overflow: hidden;
     background-size: cover;
     position: relative;
-    top: -2px;
+    top: -8px;
 }
 .image.headline img{
     vertical-align: middle;
@@ -157,7 +159,7 @@ html, body{
 }
 .sideWrapper{
     float: right;
-    border-top: 1px dashed #000;
+    border-top: 4px dashed #eee;
     transform: rotate(90deg);
     position: relative;
     left: 300px;
@@ -166,7 +168,7 @@ html, body{
     z-index: 2;
 }
 .mutilate{
-    color:#eee;
+    color:#ddd;
     font-family:"Times New Roman", serif;
     font-weight: normal;
     z-index:-5;
@@ -200,6 +202,13 @@ div.mutilate{
     width: 100%;
     background-color: #000;
     height: 40px;
+    color: #FFF;
+}
+.sectionFooter{
+    margin-top: 48px;
+    width: 100%;
+    background-color: #000;
+    height: 80px;
     color: #FFF;
 }
 .headerBookend.nav{
@@ -275,7 +284,7 @@ nav ul li{
     margin-top: 40px;
 }
 #archiveList{
-    border-top: 2px dashed #ccc;
+    border-top: 1px dashed #ccc;
 }
 #headlinerNav.mobileFix ul li:after,
 #archiveList ul li:after{
